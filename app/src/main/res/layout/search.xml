@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/close2"
+        android:layout_gravity="right"
+        android:id="@+id/closebtn"/>
+
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:hint="Find answer"
+        android:background="@drawable/rounded_edit_text"
+        android:imeOptions="actionDone"
+        android:padding="5dp"
+        android:textSize="15sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="answer"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:layout_marginBottom="30dp"
+            android:textSize="12sp"
+            android:id="@+id/answerButton"
+            android:textColor="@android:color/holo_green_light"
+            android:background="@drawable/rounded_text3"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_marginRight="10dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="name"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:layout_marginBottom="30dp"
+            android:textSize="12sp"
+            android:id="@+id/nameButton"
+            android:textColor="@android:color/holo_green_light"
+            style="?android:attr/borderlessButtonStyle"
+            android:background="@drawable/rounded_text3"/>
+
+
+    </LinearLayout>8un
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"  />
+
+</LinearLayout>

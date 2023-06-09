@@ -1,0 +1,223 @@
+1.
+@POST("forgotPassword")
+Call<Sign> forgotPassword (@Query("email")String email);
+Fungsi : mengirim password ke email user
+Api address: 
+Input : String : email
+HTTP method : post
+Response : Class Sign
+Tipe data	Nama	value
+boolen	issuccess	True / false
+String	token	null
+String	message	null
+integer	userid	0
+
+2.
+@GET("challenge")
+Call<ChallengeResponse> getChallenge (@Query("token")String token  );
+
+Fungsi : mendapat challenge hari ini
+Api url : 
+Input : String : token
+HTTP method : get
+Response : Class ChallengeResponse
+Tipe data	Nama	value
+int	id	Id challenge
+String	name	Nama challenge
+String	date	Tanggal challenge
+String 	caption	Caption challenge
+String	source	Source challenge
+int	likeCount	Jumlah like challenge
+
+3.
+@POST
+Call<Integer> likeAChallenge (@Query("token")String token, @Query("id")int userid, @Query("id")int challengeId);
+Fungsi : menyukai challenge
+Api url : 
+Input : String : token , int : userId , int : challengeId
+HTTP method : get
+Response : int : > 0 bila sukses, 0 bila gagal
+
+4.
+@GET("challengeDetail")
+Call<List<ChallengeDetail>> getChallengeDetail (@Query("token")String token  );
+Fungsi : mendapatkan challengedetail hari ini
+Api url : 
+Input : String : token 
+HTTP method : get
+Response : List<ChallengeDetatil>
+Tipe data	Nama	value
+int	id	Id challenge
+int	level	level challenge
+String	text	text challenge
+int	Challenge_id	id challenge
+int	Participant_count	Jumlah participant challenge
+
+5.
+@GET("question")
+Call<QuizAndQuestion> getQuestion (@Query("token")String token  );
+Fungsi : mendapatkan question saat ini
+Api url : 
+Input : String : token 
+HTTP method : get
+Response : List<QuizAndQuestion>
+Tipe data	Nama	value
+int	id	Id question
+String	text	Teks question
+
+6.
+@GET("quiz")
+Call<QuizAndQuestion> getQuiz (@Query("token")String token  );
+Fungsi : mendapatkan quiz saat ini
+Api url : 
+Input : String : token 
+HTTP method : get
+Response : List<QuizAndQuestion>
+Tipe data	Nama	value
+int	id	Id quiz
+String	text	Teks quiz
+
+7.
+@GET("countParticipantQuiz")
+Call<Integer> countParticipantQuiz (@Query("token")String token, @Query("id")String idQuiz   );
+Fungsi : mendapatkan jumlah participant quiz saat ini
+Api url : 
+Input : String : token , int: idQuiz
+HTTP method : get
+Response : int
+Tipe data	Nama	value
+int	count	Jumlah participant
+
+8.
+@GET("countParticipantQuestion")
+Call<Integer> countParticipantQuestion(@Query("token")String token, @Query("id")String idQuestion   );
+Fungsi : mendapatkan jumlah participant question  saat ini
+Api url : 
+Input : String : token , int: idQuestion
+HTTP method : get
+Response : int
+Tipe data	Nama	value
+int	count	Jumlah participant
+
+9.
+@GET("allAnswer")
+Call<List<Answer>> getAllAnswer (@Query("token")String token  );
+Fungsi : mendapatkan semua jawaban   saat ini
+Api url : 
+Input : String : token , int: idQuestion
+HTTP method : get
+Response : <List<Answer>>
+public class Answer {
+
+    private int id;
+
+    private int userid;
+
+    private String username;
+
+    private int questionid;
+
+    private String answer;
+
+    private Date date;
+
+    private int likeCount;
+
+    private int shareCount;
+
+10. @POST //return total participant
+Call<Integer> acceptChallenge(@Body ChallengeAccepted challengeAccepted);
+Fungsi : menerima challenge  saat ini
+Api url : 
+Input : ChallengeAccepted
+private int userid;
+private int challengeId;
+private int challengeDetailId;
+private String token;
+
+HTTP method : get
+Response : int : jumlah participant
+
+
+11.
+@POST
+Call<String> submitAnswerOfQuestion(@Query("token")String token, @Body AnswerOfQuestion answerOfQuestion);
+Fungsi : mengirimkan jawaban pertanyaan saat ini
+Api url : 
+Input : String token, AnswerOfQuestion
+private int userid;
+private int questionid;
+private String answer;
+
+HTTP method : POST
+Response : String : pesan sukses
+
+
+12.
+@POST
+Call<List<Answer>> findAnswerByAnswerKeyWord (@Query("token")String token, @Query("keyword")String word);
+Fungsi : mendapatkan semua jawaban   saat ini yang difilter oleh keyword
+Api url : 
+Input : String : token , String : word
+HTTP method : get
+Response : <List<Answer>>
+public class Answer {
+
+    private int id;
+
+    private int userid;
+
+    private String username;
+
+    private int questionid;
+
+    private String answer;
+
+    private Date date;
+
+    private int likeCount;
+
+    private int shareCount;
+
+
+
+13.
+@POST
+Call<List<Answer>> findAnswerByUsername (@Query("token")String token, @Query("username")String username);
+Fungsi : mendapatkan semua jawaban   saat ini yang difilter oleh username
+Api url : 
+Input : String : token , String: username
+HTTP method : get
+Response : <List<Answer>>
+public class Answer {
+
+    private int id;
+
+    private int userid;
+
+    private String username;
+
+    private int questionid;
+
+    private String answer;
+
+    private Date date;
+
+    private int likeCount;
+
+    private int shareCount;
+
+
+
+
+
+
+14.
+@POST
+Call<Integer> likeAnAnswer (@Query("token")String token, @Query("id")int answerId, @Query("id")int userid);
+Fungsi : menyukai sebuah jawaban   saat ini
+Api url : 
+Input : String : token , int : answered, int : userid
+HTTP method : get
+Response : int : total likes
+

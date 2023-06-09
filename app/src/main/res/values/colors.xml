@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorcategory">#60e4f9</color>
+    <color name="blue2">#37b8cc</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorAccent2">#b7ff4081</color>
+
+    <color name="colorAccent3">#79ff4081</color>
+    <color name="like">#ff481a</color>
+    <color name="username">#f7b733</color>
+    <color name="category">#48bbaa</color>
+    <color name="green">#62f1c2</color>
+    <color name="greeng1">#36f2b5</color>
+    <color name="greeng2">#2de6a9</color>
+    <color name="greeng3">#1fde9f</color>
+
+    <color name="leaf">#b1dc70</color>
+    <color name="yellow">#fffa96</color>
+    <color name="blue">#c3e9f2</color>
+
+
+    <color name="bw">#bcd4d0</color>
+
+
+
+</resources>

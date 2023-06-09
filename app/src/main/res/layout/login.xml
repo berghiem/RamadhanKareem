@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="40dp"
+            android:visibility="visible"
+            android:id="@+id/loginFields">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email address"
+                android:layout_marginBottom="10dp"
+                />
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edit_text"
+                android:padding="5dp"
+                android:textSize="15sp"
+                android:id="@+id/email"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="notif1"
+                android:textColor="@color/username"
+                android:layout_marginBottom="15dp"
+                android:visibility="invisible"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:layout_marginBottom="10dp"
+                />
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edit_text"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/password"
+                android:padding="5dp"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="notif2"
+                android:textColor="@color/username"
+                android:layout_marginBottom="15dp"
+                android:visibility="invisible"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Login"
+                android:layout_gravity="center_horizontal"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp"
+                android:layout_marginBottom="30dp"
+                android:textSize="12sp"
+                android:id="@+id/login"
+                android:textColor="@android:color/white"
+                android:background="@drawable/rounded_text_green"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forgot password ? "
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/colorPrimary"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Email me"
+                android:layout_marginBottom="25dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp"
+                android:textSize="12sp"
+                android:id="@+id/emailme"
+                android:textColor="@android:color/white"
+                android:background="@drawable/rounded_text_green"/>
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:id="@+id/progress"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Logging in.."
+                android:layout_margin="50dp"
+                android:gravity="center_horizontal"/>
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

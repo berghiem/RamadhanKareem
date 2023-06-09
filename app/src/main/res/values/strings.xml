@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Hijrah Challenge</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="search">Search</string>
+    <string name="category">Category</string>
+    <string name="recipe">puree kentang spesial ala mama ruby abcd efgh</string>
+    <string name="recipeshort">puree kentang spesial</string>
+
+    <string name="editorsPick">Editor\'s pick</string>
+    <string name="showmore">show more</string>
+    <string name="mashpotato">Mash Potato</string>
+    <string name="bahan">Ingredients</string>
+    <string name="How">Directions</string>
+    <string name="direction">direction</string>
+    <string name="bulan">6 bulan</string>
+    <string name="like">50 like</string>
+    <string name="share">Share</string>
+    <string name="mamagina">Mama gina</string>
+    <string name="harilalu">5 hari yang lalu</string>
+    <string name="bubur">bubur</string>
+    <string name="kategori">kategori</string>
+    <string name="haloberghie">halo berghie</string>
+    <string name="favorit">Favorit recipes</string>
+    <string name="award">My award</string>
+    <string name="namerecipe">Recipe name</string>
+    <string name="ingredients">ingredients</string>
+    <string name="addimage">add image</string>
+    <string name="image">image</string>
+    <string name="add_recipe">add recipe</string>
+    <string name="mypage">My Page</string>
+    <string name="facebook_app_id">868826226635240</string>
+    <string name="fb_login_protocol_scheme">fb639009929487749</string>
+    <string name="token">ruby.com.hijrahchallenge.token</string>
+    <string name="username">ruby.com.hijrahchallenge.username</string>
+
+    <string name="home_view">home</string>
+    <string name="verses">Maka bersabarlah kamu dengan sabar yang baik</string>
+    <string name="challenges">Challenges</string>
+    <string name="userid">userid</string>
+    <string-array name="sorting">
+            <item>Popular</item>
+            <item>Latest</item>
+            <item>Oldest</item>
+
+    </string-array>
+</resources>

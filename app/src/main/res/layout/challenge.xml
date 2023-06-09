@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_blue"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20dp"
+                    app:cardCornerRadius="0.3dp"
+                    app:cardElevation="1dp"
+                    android:id="@+id/card_challenge">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:background="@android:color/white"
+                        android:orientation="vertical">
+
+                        <android.support.v4.widget.Space
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.8" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                android:fontFamily="@font/cardo"
+                                android:gravity="center"
+                                android:text="@string/verses"
+                                android:textColor="@android:color/black"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="15dp"
+                                android:fontFamily="@font/cardo"
+                                android:gravity="center"
+                                android:text="keterangan"
+                                android:id="@+id/source"
+                                android:textSize="18dp"
+
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:orientation="horizontal"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp">
+
+                            <LinearLayout
+                                android:layout_width="140dp"
+                                android:layout_height="55dp"
+                                android:orientation="horizontal"
+                                android:padding="5dp">
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_weight="1">
+
+                                    <ImageView
+                                        android:layout_width="17dp"
+                                        android:layout_height="17dp"
+                                        android:layout_marginTop="5dp"
+                                        android:src="@drawable/like"
+                                        android:id="@+id/likeButton"/>
+
+                                    <TextView
+                                        android:id="@+id/shareCount"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:padding="5dp"
+                                        android:text="300"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="12sp" />
+
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_weight="1"
+                                    android:id="@+id/shareButton">
+
+                                    <ImageView
+                                        android:layout_width="17dp"
+                                        android:layout_height="17dp"
+                                        android:layout_marginTop="5dp"
+                                        android:src="@drawable/share"/>
+
+                                    <TextView
+                                        android:id="@+id/likeCount"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:padding="5dp"
+                                        android:text="share"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="12sp"
+                                        android:visibility="visible"/>
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <android.support.v4.widget.Space
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/rounded_text2"
+                                android:gravity="center_horizontal"
+                                android:paddingBottom="10dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:paddingTop="10dp"
+                                android:text="NEXT"
+                                android:textColor="@color/green"
+                                android:visibility="gone"
+                                android:textSize="12sp" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>
